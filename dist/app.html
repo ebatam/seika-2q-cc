@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+		font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', '游ゴシック', YuGothic, 'メイリオ', Meiryo, Arial, Roboto, 'Droid Sans', sans-serif, 'DotGothic16';	/* body にゴシック対のフォントを設定 */
+		}
+		.container {
+		margin-top: 0 auto;
+		text-align: center;
+		}
+		.ml11 {
+		text-align: left;
+		font-family: 'DotGothic16';
+		font-weight: 700;
+		font-size: 3.5em;
+		}
+
+		.ml11 .text-wrapper {
+		position: relative;
+		display: inline-block;
+		padding-top: 0.1em;
+		padding-right: 0.05em;
+		padding-bottom: 0.15em;
+		}
+
+		.ml11 .line {
+		opacity: 0;
+		position: absolute;
+		left: 0;
+		height: 100%;
+		width: 3px;
+		background-color: #fff;
+		transform-origin: 0 50%;
+		}
+
+		.ml11 .line1 { 
+		top: 0; 
+		left: 0;
+		}
+
+		.ml11 .letter {
+		display: inline-block;
+		line-height: 1em;
+		}
+		a {
+		font-family: 'DotGothic16';
+		text-align: center;
+		font-size: 60px;
+		vertical-align: -100px
+		}
+		p {
+		margin-top: -20px;
+		font-family: 'DotGothic16';
+		font-size: 40px;
+		}
+		#item {
+		font-family: 'DotGothic16';
+		font-size: 25px;
+		margin: auto;
+		text-align: center;
+		
+		margin-top: -100px;
+		width: 1000px;
+		height:400px;
+		background-color: #ffffff;
+		color: red;
+        }
+		u{
+		display: block;
+		margin-top: -400px;
+		}
+	</style>
+	<title>Document</title>
+</head>
+<body>
+<div class="container">
+	<!-- <button onclick="openDialog()">ダイアログ表示</button> -->
+	<a id="a7" onclick="openDialog()">7月</a>
+	<div id="item" onmouseenter="onMouseEnter()" onmouseleave="onMouseLeave()"></div>
+		<div class="dialog-base" hidden="hidden">
+			<div class="dialog">
+				<h1 class="ml11">
+					<u class="text-wrapper">
+					<u class="line line1"></u>
+					<u class="letters"> 01 | 02 | 03 | 04 | 05 | 06 | 07 |
+						 08 | 09 | 10 | 11 | 12 | 13 | 14 |
+						 15 | 16 | 17 | 18 | 19 | 20 | 21 |
+						 22 | 23 | 24 | 25 | 26 | 27 | 28 |
+						 29 | 30 | 31 |</u>
+					</u>
+				</h1>
+				<p onclick="closeDialog()">閉じる</p>
+			</div>
+		</div>	
+</div>
+	
+	<script src="app.js"></script>
+</body>
+</html>
