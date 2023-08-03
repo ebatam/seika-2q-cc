@@ -12,3 +12,16 @@ npm run build
 ```
 npm run Broesew-sync
 ```
+
+#### distの場合
+```
+https://ebatam.github.io/seika-2q-cc/dist
+```
+
+#### appの場合
+```
+https://ebatam.github.io/seika-2q-cc/dist/app
+```
+
+
+
